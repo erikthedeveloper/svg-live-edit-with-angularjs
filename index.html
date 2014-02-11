@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SVG Tutorial</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<link rel="stylesheet" href="main.css">
+
+		<link rel="stylesheet" href="monokai.css">
+	</head>
+	<body>
+
+
+<h1 class="text-center">SVG <small>using HTML5 and JavaScript</small></h1>
+
+<!-- (section.section>div.container>h1+ul.list-unstyled>(li{Lorem $}*3))*5 -->
+
+<div class="container">
+	<h1>SVG - What is It?</h1>
+	<ul class="list-unstyled">
+		<li><a href="https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference#SVG_interfaces">Crazy Complicated <strong>SVG Elements</strong></a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute">Crazy Complicated <strong>SVG Attributes</strong></a></li>
+		<li>Lorem 3</li>
+	</ul>
+</div>
+
+<div class="container">
+	<h1>Why Would I Use SVG?</h1>
+	<ul class="list-unstyled">
+		<li>Lorem 1</li>
+		<li>Lorem 2</li>
+		<li>Lorem 3</li>
+	</ul>
+</div>
+
+<div class="container">
+	<h1>How Do I Use SVG?</h1>
+
+	<h2>Caveats and Things to Remember About SVG vs. HTML</h2>
+
+	<h4>Syntax</h4>
+	<p>
+		Since SVG has its own comprehensive set of elements and attributes the syntax, at first, can be overwhelming.
+		<div class="alert alert-info">Visit the Mozilla Developer's Network for comprehensive (head spinningly comprehensive) lists of <a href="">SVG Elements</a> and <a href="">SVG Attributes</a></div>
+	</p>
+
+	<h4>Coordinate System</h4>
+	<p>
+		Starting with the top left corner as (0,0) <em>(x,y)</em>, the x value increases to the right and y value increases towards the bottom.
+		<div class="alert alert-info"><em>*Example:</em> the bottom left of a square of 200px would be (0,200) and the top right would be (200,0)</div>
+	</p>
+
+	<h4>Stacking and Layering</h4>
+	<p>
+		One important thing to remember is in what order the elements are "stacked". This can be confusing since the elements "on top" of your code will actually be on the bottom of the "stack" of your SVG elements.
+		<div class="alert alert-info">
+			The globally valid rule for SVG files is, that later elements are rendered atop previous elements. The further down an element is the more will be visible.
+		</div>
+	</p>
+
+</div>
+
+
+
+
+
+<div class="container">
+	<h2>Square <small>rect</small></h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
+	<svg width="600"  height="300">
+	  <rect width="600" height="100" fill="green" />
+	  <rect width="300" height="300" fill="blue" />
+	</svg>
+</div>
+
+<pre><code data-language="html">
+<svg width="600"  height="300">
+  <rect width="600" height="100" fill="green" />
+  <rect width="300" height="300" fill="blue" />
+</svg>
+</code></pre>
+
+
+
+
+
+
+<div class="container">
+	<h2>Line</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
+
+	<svg width="300" height="200">
+	  <line x1="0" y1="0" x2="100%" y2="100%" stroke-width="8" stroke="orange"></line>
+	  <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="red"></line>
+	  <line x1="50%" y1="0" x2="50%" y2="100%" stroke-width="8" stroke="blue"></line>
+	  <line x1="0" y1="100%" x2="100%" y2="0" stroke-width="8" stroke="green"></line>
+	</svg>
+
+</div>
+
+<pre><code data-language="html">
+<svg width="300" height="200">
+  <line x1="0" y1="0" x2="100%" y2="100%" stroke-width="8" stroke="orange"></line>
+  <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="red"></line>
+  <line x1="50%" y1="0" x2="50%" y2="100%" stroke-width="8" stroke="blue"></line>
+  <line x1="0" y1="100%" x2="100%" y2="0" stroke-width="8" stroke="green"></line>
+</svg>
+</code></pre>
+
+
+
+
+
+
+<div class="container">
+	<h2>Circle</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
+	<svg width="300" height="200">
+	  <circle cx="150" cy="100" r="80" fill="green" />
+	</svg>
+</div>
+
+<pre><code data-language="html">
+<svg width="300" height="200">
+  <circle cx="150" cy="100" r="80" fill="green" />
+</svg>
+</code></pre>
+
+
+
+
+
+<div class="container">
+	<h2>Polygon</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
+	<svg width="300" height="200">
+	  <path d="M 100 100
+	  L 200 200 100 150"/>
+	</svg>
+</div>
+
+<pre><code data-language="html">
+<svg width="300" height="200">
+  <path d="M 100 100
+  L 200 200 100 150"/>
+</svg>
+</code></pre>
+
+
+
+
+
+
+<div class="container">
+	<h1>Practical Example</h1>
+
+	<h2>Moqups</h2>
+
+	<h2>Interactive Live Edit</h2>
+	<ul class="list-unstyled">
+		<li>Add/Remove Points</li>
+		<li>Background Color</li>
+		<li>Stroke</li>
+		<li><em>*Preset Config</em></li>
+	</ul>
+</div>
+
+<div class="container">
+	<h1></h1>
+	<ul class="list-unstyled">
+		<li>Lorem 1</li>
+		<li>Lorem 2</li>
+		<li>Lorem 3</li>
+	</ul>
+</div>
+
+<div class="container">
+  <h2 id="links">Links for Thought</h2>
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="list-group">
+        <div class="list-group-item">
+          <h4 class="list-group-item-heading">Documentation/Resources</h4>
+        </div>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+      </div>
+
+      <div class="list-group">
+        <div class="list-group-item">
+          <h4 class="list-group-item-heading">SVG in Use <small>In the Wild</small></h4>
+        </div>
+        <a href="#" class="list-group-item">Google Maps <em>Canvas...</em></a>
+        <a href="http://svg-wow.org/camera/camera.xhtml" class="list-group-item">Cool Text Animation</a>
+        <a href="https://moqups.com/#!/" class="list-group-item">Moqups</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+      </div>
+
+      <div class="list-group">
+        <div class="list-group-item">
+          <h4 class="list-group-item-heading">Other Links....</h4>
+        </div>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+        <a href="#" class="list-group-item">Fake</a>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+		<script src="rainbow-custom.min.js"></script>
+
+
+	</body>
+</html>
