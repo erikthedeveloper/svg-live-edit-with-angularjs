@@ -7,39 +7,445 @@
 		<meta name=viewport content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap CSS -->
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="http://bootswatch.com/superhero/bootstrap.min.css" media="all" type="text/css">
 
 		<link rel="stylesheet" href="main.css">
 
-		<link rel="stylesheet" href="monokai.css">
+		<!-- <link rel="stylesheet" href="monokai.css"> -->
+        <link href="prism.css" rel="stylesheet" />
 	</head>
 	<body>
 
 
-<h1 class="text-center">SVG <small>using HTML5 and JavaScript</small></h1>
 
 <!-- (section.section>div.container>h1+ul.list-unstyled>(li{Lorem $}*3))*5 -->
 
 <div class="container">
-	<h1>SVG - What is It?</h1>
-	<ul class="list-unstyled">
-		<li><a href="https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference#SVG_interfaces">Crazy Complicated <strong>SVG Elements</strong></a></li>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute">Crazy Complicated <strong>SVG Attributes</strong></a></li>
-		<li>Lorem 3</li>
-	</ul>
-</div>
+	<h1 class="text-center">SVG <small>a Glimpse at the Beast</small></h1>
+	<h2>SVG - What is It?</h2>
 
-<div class="container">
-	<h1>Why Would I Use SVG?</h1>
-	<ul class="list-unstyled">
-		<li>Lorem 1</li>
-		<li>Lorem 2</li>
-		<li>Lorem 3</li>
-	</ul>
-</div>
+    <div class="alert alert-info">
+        <h4>According to MDN</h4>
+        <p>
+            Scalable Vector Graphics (SVG) is an XML markup language for describing two-dimensional vector graphics. SVG is essentially to graphics what XHTML is to text.
 
-<div class="container">
-	<h1>How Do I Use SVG?</h1>
+            SVG is similar in scope to Adobe's proprietary Flash technology, but what distinguishes SVG from Flash is that it is a W3C recommendation (i.e., a standard) and that it is XML-based as opposed to a closed binary format. It is explicitly designed to work with other W3C standards such as CSS, DOM and SMIL.
+        </p>
+    </div>
+
+    <div class="panel-group" id="accordion">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Crazy Complicated List of <strong><a href="https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference#SVG_interfaces">SVG Elements</a></strong>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="col-sm-4">SVGAElement</div>
+                    <div class="col-sm-4">SVGAltGlyphElement</div>
+                    <div class="col-sm-4">SVGAltGlyphDefElement</div>
+                    <div class="col-sm-4">SVGAltGlyphItemElement</div>
+                    <div class="col-sm-4">SVGAnimationElement</div>
+                    <div class="col-sm-4">SVGAnimateElement</div>
+                    <div class="col-sm-4">SVGAnimateColorElement</div>
+                    <div class="col-sm-4">SVGAnimateMotionElement</div>
+                    <div class="col-sm-4">SVGAnimateTransformElement</div>
+                    <div class="col-sm-4">SVGCircleElement</div>
+                    <div class="col-sm-4">SVGClipPathElement</div>
+                    <div class="col-sm-4">SVGColorProfileElement</div>
+                    <div class="col-sm-4">SVGComponentTransferFunctionElement</div>
+                    <div class="col-sm-4">SVGCursorElement</div>
+                    <div class="col-sm-4">SVGDefsElement</div>
+                    <div class="col-sm-4">SVGDescElement</div>
+                    <div class="col-sm-4">SVGElement</div>
+                    <div class="col-sm-4">SVGEllipseElement</div>
+                    <div class="col-sm-4">SVGFEBlendElement</div>
+                    <div class="col-sm-4">SVGFEColorMatrixElement</div>
+                    <div class="col-sm-4">SVGFEComponentTransferElement</div>
+                    <div class="col-sm-4">SVGFECompositeElement</div>
+                    <div class="col-sm-4">SVGFEConvolveMatrixElement</div>
+                    <div class="col-sm-4">SVGFEDiffuseLightingElement</div>
+                    <div class="col-sm-4">SVGFEDisplacementMapElement</div>
+                    <div class="col-sm-4">SVGFEDistantLightElement</div>
+                    <div class="col-sm-4">SVGFEFloodElement</div>
+                    <div class="col-sm-4">SVGFEGaussianBlurElement</div>
+                    <div class="col-sm-4">SVGFEImageElement</div>
+                    <div class="col-sm-4">SVGFEMergeElement</div>
+                    <div class="col-sm-4">SVGFEMergeNodeElement</div>
+                    <div class="col-sm-4">SVGFEMorphologyElement</div>
+                    <div class="col-sm-4">SVGFEOffsetElement</div>
+                    <div class="col-sm-4">SVGFEPointLightElement</div>
+                    <div class="col-sm-4">SVGFESpecularLightingElement</div>
+                    <div class="col-sm-4">SVGFESpotLightElement</div>
+                    <div class="col-sm-4">SVGFETileElement</div>
+                    <div class="col-sm-4">SVGFETurbulenceElement</div>
+                    <div class="col-sm-4">SVGFEFuncRElement</div>
+                    <div class="col-sm-4">SVGFEFuncGElement</div>
+                    <div class="col-sm-4">SVGFEFuncBElement</div>
+                    <div class="col-sm-4">SVGFEFuncAElement</div>
+                    <div class="col-sm-4">SVGFilterElement</div>
+                    <div class="col-sm-4">SVGFilterPrimitiveStandardAttributes</div>
+                    <div class="col-sm-4">SVGFontElement</div>
+                    <div class="col-sm-4">SVGFontFaceElement</div>
+                    <div class="col-sm-4">SVGFontFaceFormatElement</div>
+                    <div class="col-sm-4">SVGFontFaceNameElement</div>
+                    <div class="col-sm-4">SVGFontFaceSrcElement</div>
+                    <div class="col-sm-4">SVGFontFaceUriElement</div>
+                    <div class="col-sm-4">SVGForeignObjectElement</div>
+                    <div class="col-sm-4">SVGGElement</div>
+                    <div class="col-sm-4">SVGGlyphElement</div>
+                    <div class="col-sm-4">SVGGlyphRefElement</div>
+                    <div class="col-sm-4">SVGGradientElement</div>
+                    <div class="col-sm-4">SVGHKernElement</div>
+                    <div class="col-sm-4">SVGImageElement</div>
+                    <div class="col-sm-4">SVGLinearGradientElement</div>
+                    <div class="col-sm-4">SVGLineElement</div>
+                    <div class="col-sm-4">SVGMarkerElement</div>
+                    <div class="col-sm-4">SVGMaskElement</div>
+                    <div class="col-sm-4">SVGMetadataElement</div>
+                    <div class="col-sm-4">SVGMissingGlyphElement</div>
+                    <div class="col-sm-4">SVGMPathElement</div>
+                    <div class="col-sm-4">SVGPathElement</div>
+                    <div class="col-sm-4">SVGPatternElement</div>
+                    <div class="col-sm-4">SVGPolylineElement</div>
+                    <div class="col-sm-4">SVGPolygonElement</div>
+                    <div class="col-sm-4">SVGRadialGradientElement</div>
+                    <div class="col-sm-4">SVGRectElement</div>
+                    <div class="col-sm-4">SVGScriptElement</div>
+                    <div class="col-sm-4">SVGSetElement</div>
+                    <div class="col-sm-4">SVGStopElement</div>
+                    <div class="col-sm-4">SVGStyleElement</div>
+                    <div class="col-sm-4">SVGSVGElement</div>
+                    <div class="col-sm-4">SVGSwitchElement</div>
+                    <div class="col-sm-4">SVGSymbolElement</div>
+                    <div class="col-sm-4">SVGTextElement</div>
+                    <div class="col-sm-4">SVGTextPathElement</div>
+                    <div class="col-sm-4">SVGTitleElement</div>
+                    <div class="col-sm-4">SVGTRefElement</div>
+                    <div class="col-sm-4">SVGTSpanElement</div>
+                    <div class="col-sm-4">SVGUseElement</div>
+                    <div class="col-sm-4">SVGViewElement</div>
+                    <div class="col-sm-4">SVGVKernElement</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    Even Crazier List of <strong><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute">SVG Element Attributes</a></strong>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="col-sm-3"><strong>A</strong></div>
+                    <div class="col-sm-3">accent-height</div>
+                    <div class="col-sm-3">accumulate</div>
+                    <div class="col-sm-3">additive</div>
+                    <div class="col-sm-3">alignment-baseline</div>
+                    <div class="col-sm-3">allowReorder</div>
+                    <div class="col-sm-3">alphabetic</div>
+                    <div class="col-sm-3">amplitude</div>
+                    <div class="col-sm-3">arabic-form</div>
+                    <div class="col-sm-3">ascent</div>
+                    <div class="col-sm-3">attributeName</div>
+                    <div class="col-sm-3">attributeType</div>
+                    <div class="col-sm-3">azimuth</div>
+                    <div class="col-sm-3"><strong>B</strong></div>
+                    <div class="col-sm-3">baseFrequency</div>
+                    <div class="col-sm-3">baseline-shift</div>
+                    <div class="col-sm-3">baseProfile</div>
+                    <div class="col-sm-3">bbox</div>
+                    <div class="col-sm-3">begin</div>
+                    <div class="col-sm-3">bias</div>
+                    <div class="col-sm-3">by</div>
+                    <div class="col-sm-3"><strong>C</strong></div>
+                    <div class="col-sm-3">calcMode</div>
+                    <div class="col-sm-3">cap-height</div>
+                    <div class="col-sm-3">class</div>
+                    <div class="col-sm-3">clip</div>
+                    <div class="col-sm-3">clipPathUnits</div>
+                    <div class="col-sm-3">clip-path</div>
+                    <div class="col-sm-3">clip-rule</div>
+                    <div class="col-sm-3">color</div>
+                    <div class="col-sm-3">color-interpolation</div>
+                    <div class="col-sm-3">color-interpolation-filters</div>
+                    <div class="col-sm-3">color-profile</div>
+                    <div class="col-sm-3">color-rendering</div>
+                    <div class="col-sm-3">contentScriptType</div>
+                    <div class="col-sm-3">contentStyleType</div>
+                    <div class="col-sm-3">cursor</div>
+                    <div class="col-sm-3">cx</div>
+                    <div class="col-sm-3">cy</div>
+                    <div class="col-sm-3"><strong>D</strong></div>
+                    <div class="col-sm-3">d</div>
+                    <div class="col-sm-3">descent</div>
+                    <div class="col-sm-3">diffuseConstant</div>
+                    <div class="col-sm-3">direction</div>
+                    <div class="col-sm-3">display</div>
+                    <div class="col-sm-3">divisor</div>
+                    <div class="col-sm-3">dominant-baseline</div>
+                    <div class="col-sm-3">dur</div>
+                    <div class="col-sm-3">dx</div>
+                    <div class="col-sm-3">dy</div>
+                    <div class="col-sm-3"><strong>E</strong></div>
+                    <div class="col-sm-3">edgeMode</div>
+                    <div class="col-sm-3">elevation</div>
+                    <div class="col-sm-3">enable-background</div>
+                    <div class="col-sm-3">end</div>
+                    <div class="col-sm-3">exponent</div>
+                    <div class="col-sm-3">externalResourcesRequired</div>
+                    <div class="col-sm-3"><strong>F</strong></div>
+                    <div class="col-sm-3">fill</div>
+                    <div class="col-sm-3">fill-opacity</div>
+                    <div class="col-sm-3">fill-rule</div>
+                    <div class="col-sm-3">filter</div>
+                    <div class="col-sm-3">filterRes</div>
+                    <div class="col-sm-3">filterUnits</div>
+                    <div class="col-sm-3">flood-color</div>
+                    <div class="col-sm-3">flood-opacity</div>
+                    <div class="col-sm-3">font-family</div>
+                    <div class="col-sm-3">font-size</div>
+                    <div class="col-sm-3">font-size-adjust</div>
+                    <div class="col-sm-3">font-stretch</div>
+                    <div class="col-sm-3">font-style</div>
+                    <div class="col-sm-3">font-variant</div>
+                    <div class="col-sm-3">font-weight</div>
+                    <div class="col-sm-3">format</div>
+                    <div class="col-sm-3">from</div>
+                    <div class="col-sm-3">fx</div>
+                    <div class="col-sm-3">fy</div>
+                    <div class="col-sm-3"><strong>G</strong></div>
+                    <div class="col-sm-3">g1</div>
+                    <div class="col-sm-3">g2</div>
+                    <div class="col-sm-3">glyph-name</div>
+                    <div class="col-sm-3">glyph-orientation-horizontal</div>
+                    <div class="col-sm-3">glyph-orientation-vertical</div>
+                    <div class="col-sm-3">glyphRef</div>
+                    <div class="col-sm-3">gradientTransform</div>
+                    <div class="col-sm-3">gradientUnits</div>
+                    <div class="col-sm-3"><strong>H</strong></div>
+                    <div class="col-sm-3">hanging</div>
+                    <div class="col-sm-3">height</div>
+                    <div class="col-sm-3">horiz-adv-x</div>
+                    <div class="col-sm-3">horiz-origin-x</div>
+                    <div class="col-sm-3"><strong>I</strong></div>
+                    <div class="col-sm-3">id</div>
+                    <div class="col-sm-3">ideographic</div>
+                    <div class="col-sm-3">image-rendering</div>
+                    <div class="col-sm-3">in</div>
+                    <div class="col-sm-3">in2</div>
+                    <div class="col-sm-3">intercept</div>
+                    <div class="col-sm-3"><strong>K</strong></div>
+                    <div class="col-sm-3">k</div>
+                    <div class="col-sm-3">k1</div>
+                    <div class="col-sm-3">k2</div>
+                    <div class="col-sm-3">k3</div>
+                    <div class="col-sm-3">k4</div>
+                    <div class="col-sm-3">kernelMatrix</div>
+                    <div class="col-sm-3">kernelUnitLength</div>
+                    <div class="col-sm-3">kerning</div>
+                    <div class="col-sm-3">keyPoints</div>
+                    <div class="col-sm-3">keySplines</div>
+                    <div class="col-sm-3">keyTimes</div>
+                    <div class="col-sm-3"><strong>L</strong></div>
+                    <div class="col-sm-3">lang</div>
+                    <div class="col-sm-3">lengthAdjust</div>
+                    <div class="col-sm-3">letter-spacing</div>
+                    <div class="col-sm-3">lighting-color</div>
+                    <div class="col-sm-3">limitingConeAngle</div>
+                    <div class="col-sm-3">local</div>
+                    <div class="col-sm-3"><strong>M</strong></div>
+                    <div class="col-sm-3">marker-end</div>
+                    <div class="col-sm-3">marker-mid</div>
+                    <div class="col-sm-3">marker-start</div>
+                    <div class="col-sm-3">markerHeight</div>
+                    <div class="col-sm-3">markerUnits</div>
+                    <div class="col-sm-3">markerWidth</div>
+                    <div class="col-sm-3">mask</div>
+                    <div class="col-sm-3">maskContentUnits</div>
+                    <div class="col-sm-3">maskUnits</div>
+                    <div class="col-sm-3">mathematical</div>
+                    <div class="col-sm-3">max</div>
+                    <div class="col-sm-3">media</div>
+                    <div class="col-sm-3">method</div>
+                    <div class="col-sm-3">min</div>
+                    <div class="col-sm-3">mode</div>
+                    <div class="col-sm-3"><strong>N</strong></div>
+                    <div class="col-sm-3">name</div>
+                    <div class="col-sm-3">numOctaves</div>
+                    <div class="col-sm-3"><strong>O</strong></div>
+                    <div class="col-sm-3">offset</div>
+                    <div class="col-sm-3">onabort</div>
+                    <div class="col-sm-3">onactivate</div>
+                    <div class="col-sm-3">onbegin</div>
+                    <div class="col-sm-3">onclick</div>
+                    <div class="col-sm-3">onend</div>
+                    <div class="col-sm-3">onerror</div>
+                    <div class="col-sm-3">onfocusin</div>
+                    <div class="col-sm-3">onfocusout</div>
+                    <div class="col-sm-3">onload</div>
+                    <div class="col-sm-3">onmousedown</div>
+                    <div class="col-sm-3">onmousemove</div>
+                    <div class="col-sm-3">onmouseout</div>
+                    <div class="col-sm-3">onmouseover</div>
+                    <div class="col-sm-3">onmouseup</div>
+                    <div class="col-sm-3">onrepeat</div>
+                    <div class="col-sm-3">onresize</div>
+                    <div class="col-sm-3">onscroll</div>
+                    <div class="col-sm-3">onunload</div>
+                    <div class="col-sm-3">onzoom</div>
+                    <div class="col-sm-3">opacity</div>
+                    <div class="col-sm-3">operator</div>
+                    <div class="col-sm-3">order</div>
+                    <div class="col-sm-3">orient</div>
+                    <div class="col-sm-3">orientation</div>
+                    <div class="col-sm-3">origin</div>
+                    <div class="col-sm-3">overflow</div>
+                    <div class="col-sm-3">overline-position</div>
+                    <div class="col-sm-3">overline-thickness</div>
+                    <div class="col-sm-3"><strong>P</strong></div>
+                    <div class="col-sm-3">panose-1</div>
+                    <div class="col-sm-3">paint-order</div>
+                    <div class="col-sm-3">path</div>
+                    <div class="col-sm-3">pathLength</div>
+                    <div class="col-sm-3">patternContentUnits</div>
+                    <div class="col-sm-3">patternTransform</div>
+                    <div class="col-sm-3">patternUnits</div>
+                    <div class="col-sm-3">pointer-events</div>
+                    <div class="col-sm-3">points</div>
+                    <div class="col-sm-3">pointsAtX</div>
+                    <div class="col-sm-3">pointsAtY</div>
+                    <div class="col-sm-3">pointsAtZ</div>
+                    <div class="col-sm-3">preserveAlpha</div>
+                    <div class="col-sm-3">preserveAspectRatio</div>
+                    <div class="col-sm-3">primitiveUnits</div>
+                    <div class="col-sm-3"><strong>R</strong></div>
+                    <div class="col-sm-3">r</div>
+                    <div class="col-sm-3">radius</div>
+                    <div class="col-sm-3">refX</div>
+                    <div class="col-sm-3">refY</div>
+                    <div class="col-sm-3">rendering-intent</div>
+                    <div class="col-sm-3">repeatCount</div>
+                    <div class="col-sm-3">repeatDur</div>
+                    <div class="col-sm-3">requiredExtensions</div>
+                    <div class="col-sm-3">requiredFeatures</div>
+                    <div class="col-sm-3">restart</div>
+                    <div class="col-sm-3">result</div>
+                    <div class="col-sm-3">rotate</div>
+                    <div class="col-sm-3">rx</div>
+                    <div class="col-sm-3">ry</div>
+                    <div class="col-sm-3"><strong>S</strong></div>
+                    <div class="col-sm-3">scale</div>
+                    <div class="col-sm-3">seed</div>
+                    <div class="col-sm-3">shape-rendering</div>
+                    <div class="col-sm-3">slope</div>
+                    <div class="col-sm-3">spacing</div>
+                    <div class="col-sm-3">specularConstant</div>
+                    <div class="col-sm-3">specularExponent</div>
+                    <div class="col-sm-3">spreadMethod</div>
+                    <div class="col-sm-3">startOffset</div>
+                    <div class="col-sm-3">stdDeviation</div>
+                    <div class="col-sm-3">stemh</div>
+                    <div class="col-sm-3">stemv</div>
+                    <div class="col-sm-3">stitchTiles</div>
+                    <div class="col-sm-3">stop-color</div>
+                    <div class="col-sm-3">stop-opacity</div>
+                    <div class="col-sm-3">strikethrough-position</div>
+                    <div class="col-sm-3">strikethrough-thickness</div>
+                    <div class="col-sm-3">string</div>
+                    <div class="col-sm-3">stroke</div>
+                    <div class="col-sm-3">stroke-dasharray</div>
+                    <div class="col-sm-3">stroke-dashoffset</div>
+                    <div class="col-sm-3">stroke-linecap</div>
+                    <div class="col-sm-3">stroke-linejoin</div>
+                    <div class="col-sm-3">stroke-miterlimit</div>
+                    <div class="col-sm-3">stroke-opacity</div>
+                    <div class="col-sm-3">stroke-width</div>
+                    <div class="col-sm-3">style</div>
+                    <div class="col-sm-3">surfaceScale</div>
+                    <div class="col-sm-3">systemLanguage</div>
+                    <div class="col-sm-3"><strong>T</strong></div>
+                    <div class="col-sm-3">tableValues</div>
+                    <div class="col-sm-3">target</div>
+                    <div class="col-sm-3">targetX</div>
+                    <div class="col-sm-3">targetY</div>
+                    <div class="col-sm-3">text-anchor</div>
+                    <div class="col-sm-3">text-decoration</div>
+                    <div class="col-sm-3">text-rendering</div>
+                    <div class="col-sm-3">textLength</div>
+                    <div class="col-sm-3">to</div>
+                    <div class="col-sm-3">transform</div>
+                    <div class="col-sm-3">type</div>
+                    <div class="col-sm-3"><strong>U</strong></div>
+                    <div class="col-sm-3">u1</div>
+                    <div class="col-sm-3">u2</div>
+                    <div class="col-sm-3">underline-position</div>
+                    <div class="col-sm-3">underline-thickness</div>
+                    <div class="col-sm-3">unicode</div>
+                    <div class="col-sm-3">unicode-bidi</div>
+                    <div class="col-sm-3">unicode-range</div>
+                    <div class="col-sm-3">units-per-em</div>
+                    <div class="col-sm-3"><strong>V</strong></div>
+                    <div class="col-sm-3">v-alphabetic</div>
+                    <div class="col-sm-3">v-hanging</div>
+                    <div class="col-sm-3">v-ideographic</div>
+                    <div class="col-sm-3">v-mathematical</div>
+                    <div class="col-sm-3">values</div>
+                    <div class="col-sm-3">version</div>
+                    <div class="col-sm-3">vert-adv-y</div>
+                    <div class="col-sm-3">vert-origin-x</div>
+                    <div class="col-sm-3">vert-origin-y</div>
+                    <div class="col-sm-3">viewBox</div>
+                    <div class="col-sm-3">viewTarget</div>
+                    <div class="col-sm-3">visibility</div>
+                    <div class="col-sm-3"><strong>W</strong></div>
+                    <div class="col-sm-3">width</div>
+                    <div class="col-sm-3">widths</div>
+                    <div class="col-sm-3">word-spacing</div>
+                    <div class="col-sm-3">writing-mode</div>
+                    <div class="col-sm-3"><strong>X</strong></div>
+                    <div class="col-sm-3">x</div>
+                    <div class="col-sm-3">x-height</div>
+                    <div class="col-sm-3">x1</div>
+                    <div class="col-sm-3">x2</div>
+                    <div class="col-sm-3">xChannelSelector</div>
+                    <div class="col-sm-3">xlink:actuate</div>
+                    <div class="col-sm-3">xlink:arcrole</div>
+                    <div class="col-sm-3">xlink:href</div>
+                    <div class="col-sm-3">xlink:role</div>
+                    <div class="col-sm-3">xlink:show</div>
+                    <div class="col-sm-3">xlink:title</div>
+                    <div class="col-sm-3">xlink:type</div>
+                    <div class="col-sm-3">xml:base</div>
+                    <div class="col-sm-3">xml:lang</div>
+                    <div class="col-sm-3">xml:space</div>
+                    <div class="col-sm-3"><strong>Y</strong></div>
+                    <div class="col-sm-3">y</div>
+                    <div class="col-sm-3">y1</div>
+                    <div class="col-sm-3">y2</div>
+                    <div class="col-sm-3">yChannelSelector</div>
+                    <div class="col-sm-3"><strong>Z</strong></div>
+                    <div class="col-sm-3">z</div>
+                    <div class="col-sm-3">zoomAndPan</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <p class="lead">
+        In a nutshell, SVG pertaining to web development is an awesome, programmable interface for creating... well, <strong>S</strong>calable <strong>V</strong>ector <strong>G</strong>raphics!
+    </p>
+    <hr>
+
 
 	<h2>Caveats and Things to Remember About SVG vs. HTML</h2>
 
@@ -67,50 +473,69 @@
 
 
 
-
-
 <div class="container">
-	<h2>Square <small>rect</small></h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
-	<svg width="600"  height="300">
-	  <rect width="600" height="100" fill="green" />
-	  <rect width="300" height="300" fill="blue" />
-	</svg>
+	<h2>Rectangles</h2>
+	<p class="lead">
+        Note that only the width and height are required, yet there are many attributes available for declaration.
+    </p>
+    <div class="text-center">
+        <svg width="600"  height="300">
+          <rect width="600" height="100" />
+          <rect width="300" height="300" fill="blue" />
+          <rect width="100" height="100" fill="red" stroke="black" x="60%" y="50%" rx="10" ry="10"></rect>
+        </svg>
+        <p class="help-block">*Inspect the elements to better visualize the layering/rendering/stacking order</p>
+    </div>
 </div>
 
-<pre><code data-language="html">
+<pre><code class="language-markup"><xmp>
 <svg width="600"  height="300">
   <rect width="600" height="100" fill="green" />
   <rect width="300" height="300" fill="blue" />
+  <rect width="100" height="100" fill="red" stroke="black" x="60%" y="50%" rx="10" ry="10"></rect>
 </svg>
-</code></pre>
-
-
-
+</xmp></code></pre>
 
 
 
 <div class="container">
-	<h2>Line</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
+	<h2>Line and Polyline</h2>
+	<p class="lead">
+        Using differing colors and relative (%) x and y attributes to illustrate the ease of the coordinate system.
+    </p>
 
-	<svg width="300" height="200">
-	  <line x1="0" y1="0" x2="100%" y2="100%" stroke-width="8" stroke="orange"></line>
-	  <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="red"></line>
-	  <line x1="50%" y1="0" x2="50%" y2="100%" stroke-width="8" stroke="blue"></line>
-	  <line x1="0" y1="100%" x2="100%" y2="0" stroke-width="8" stroke="green"></line>
-	</svg>
+    <div class="text-center">
+    	<svg width="300" height="200">
+    	  <line x1="0" y1="0" x2="100%" y2="100%" stroke-width="8" stroke="orange"></line>
+    	  <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="red"></line>
+    	  <line x1="50%" y1="0" x2="50%" y2="100%" stroke-width="8" stroke="blue"></line>
+    	  <line x1="0" y1="100%" x2="100%" y2="0" stroke-width="8" stroke="green"></line>
+    	</svg>
+
+        <svg width="600" height="200">
+          <polyline points="0,200 100,50, 300,125 600,10" fill="none" stroke-width="8" stroke="orange"> </polyline>
+          <polyline points="0,200 100,175, 300,155 600,90" fill="none" stroke-width="8" stroke="red"> </polyline>
+        </svg>
+    </div>
+
+    <p class="alert alert-success">
+        Did someone say "super sweet analytics application"?!
+    </p>
 
 </div>
 
-<pre><code data-language="html">
+<pre><code class="language-markup"><xmp>
 <svg width="300" height="200">
   <line x1="0" y1="0" x2="100%" y2="100%" stroke-width="8" stroke="orange"></line>
   <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="red"></line>
   <line x1="50%" y1="0" x2="50%" y2="100%" stroke-width="8" stroke="blue"></line>
   <line x1="0" y1="100%" x2="100%" y2="0" stroke-width="8" stroke="green"></line>
 </svg>
-</code></pre>
+<svg width="600" height="200">
+  <polyline points="0,200 100,50, 300,125 600,10" fill="none" stroke-width="8" stroke="orange"> </polyline>
+  <polyline points="0,200 100,175, 300,155 600,90" fill="none" stroke-width="8" stroke="red"> </polyline>
+</svg>
+</xmp></code></pre>
 
 
 
@@ -119,17 +544,33 @@
 
 <div class="container">
 	<h2>Circle</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
-	<svg width="300" height="200">
-	  <circle cx="150" cy="100" r="80" fill="green" />
-	</svg>
+	<p class="lead">
+        Well... it's a circle!
+    </p>
+
+    <div class="text-center">
+    	<svg width="300" height="200">
+    	  <circle cx="50%" cy="50%" r="80" fill="green" />
+    	</svg>
+        <svg width="300" height="200">
+          <circle cx="15%" cy="30%" r="30" fill="yellow" />
+          <circle cx="55%" cy="20%" r="20" fill="blue" />
+          <circle cx="70%" cy="70%" r="25" fill="orange" />
+        </svg>
+    </div>
+
 </div>
 
-<pre><code data-language="html">
+<pre><code class="language-markup"><xmp>
 <svg width="300" height="200">
-  <circle cx="150" cy="100" r="80" fill="green" />
+  <circle cx="50%" cy="50%" r="80" fill="green" />
 </svg>
-</code></pre>
+<svg width="300" height="200">
+  <circle cx="15%" cy="30%" r="30" fill="yellow" />
+  <circle cx="55%" cy="20%" r="20" fill="blue" />
+  <circle cx="70%" cy="70%" r="25" fill="orange" />
+</svg>
+</xmp></code></pre>
 
 
 
@@ -137,52 +578,187 @@
 
 <div class="container">
 	<h2>Polygon</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda rerum vitae quis animi delectus hic. </p>
-	<svg width="300" height="200">
-	  <path d="M 100 100
-	  L 200 200 100 150"/>
-	</svg>
+	<p class="lead">
+        Ok, my head is spinning now. How about yours? <strong>Let's enjoy... </strong>some floating rectangles!
+    </p>
+
+    <div class="text-center">
+    	<svg width="300" height="200">
+    	  <path d="M 100 100
+    	  L 200 200 100 150" fill="blue" />
+            <rect x="10" y="10" width="100" height="100" fill="orange">
+                <animate attributeType="XML"
+                         attributeName="x"
+                         from="-50%" to="150%"
+                         dur="10s"
+                         repeatCount="indefinite"/>
+            </rect>
+            <rect x="10" y="150" width="50" height="50" fill="green">
+                <animate attributeType="XML"
+                         attributeName="x"
+                         from="-50%" to="150%"
+                         dur="7s"
+                         repeatCount="indefinite"/>
+            </rect>
+            <rect x="10" y="80" width="20" height="20" fill="red">
+                <animate attributeType="XML"
+                         attributeName="x"
+                         from="-50%" to="150%"
+                         dur="3s"
+                         repeatCount="indefinite"/>
+            </rect>
+        </svg>
+    </div>
+
+    <p class="alert alert-danger">
+        Beware the <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d">Rabbit Hole (d)</a>
+    </p>
 </div>
 
-<pre><code data-language="html">
+<pre><code class="language-markup"><xmp>
 <svg width="300" height="200">
   <path d="M 100 100
-  L 200 200 100 150"/>
+  L 200 200 100 150" fill="blue" />
+    <rect x="10" y="10" width="100" height="100" fill="orange">
+        <animate attributeType="XML"
+                 attributeName="x"
+                 from="-100" to="120"
+                 dur="10s"
+                 repeatCount="indefinite"/>
+    </rect>
 </svg>
-</code></pre>
+</xmp></code></pre>
 
 
 
 
 
 
-<div class="container">
-	<h1>Practical Example</h1>
+<div class="jumbotron" ng-app="svgApp">
+	<h1>Practical Example <small>An early, early look at... <strong>Bx'D</strong></small></h1>
 
-	<h2>Moqups</h2>
+	<p class="lead">Throw in a dash of <strong>AngularJS and HTML5 input fields</strong> and we have the beginnings of... well, this!</p>
 
-	<h2>Interactive Live Edit</h2>
-	<ul class="list-unstyled">
-		<li>Add/Remove Points</li>
-		<li>Background Color</li>
-		<li>Stroke</li>
-		<li><em>*Preset Config</em></li>
-	</ul>
+    <div class="container my-svg-app" ng-controller="SvgCtrl">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Bx'D <small>v0.0.1</small></h3>
+            </div>
+
+            <div class="panel-body">
+
+
+                <svg width="100%"  height="300">
+                    <polyline points="{{line1.points}}" fill="none" stroke-width="{{line1.stroke_width}}" stroke="{{line1.stroke}}"> </polyline>
+                    <polyline points="{{line2.points}}" fill="none" stroke-width="{{line2.stroke_width}}" stroke="{{line2.stroke}}"> </polyline>
+                    <rect width="{{rect.width}}" height="{{rect.height}}" fill="{{rect.fill}}" stroke="{{rect.stroke}}" stroke-width="{{rect.stroke_width}}" x="{{rect.x}}" y="{{rect.y}}" rx="{{rect.border_radius}}" ry="{{rect.border_radius}}"></rect>
+                </svg>
+
+                <div class="row"> <!-- Controls -->
+                    <div class="col-sm-6"> <!-- Rect -->
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                width
+                                <input type="number" step="10" class="form-control input-md" ng-model="rect.width" />
+                            </div>
+                            <div class="col-sm-3">
+                                height
+                                <input type="number" step="10" class="form-control input-md" ng-model="rect.height" />
+                            </div>
+                            <div class="col-sm-3">
+                                stroke
+                                <input type="color" class="form-control input-md" ng-model="rect.stroke" />
+                            </div>
+                            <div class="col-sm-3">
+                                fill
+                                <input type="color" class="form-control input-md" ng-model="rect.fill" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                x
+                                <input type="number" step="10" class="form-control input-md" ng-model="rect.x" />
+                            </div>
+                            <div class="col-sm-3">
+                                y
+                                <input type="number" step="10" class="form-control input-md" ng-model="rect.y" />
+                            </div>
+                            <div class="col-sm-3">
+                                border radius
+                                <input type="number" step="5" class="form-control input-md" ng-model="rect.border_radius" />
+                            </div>
+                            <div class="col-sm-3">
+                                stroke width
+                                <input type="number" class="form-control input-md" ng-model="rect.stroke_width" />
+                            </div>
+                        </div>
+
+                        <hr>
+                        <p class="alert alert-success">
+                            Use the controls wisely!
+                            <button class="btn btn-primary pull-right" ng-click="shapesInit()">Reset</button>
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-6"> <!-- Polylines -->
+
+                        <div class="row"> <!-- Line 1 -->
+                            <div class="col-sm-12">
+                                points
+                                <input type="text" class="form-control input-md" ng-model="line1.points" />
+                            </div>
+                            <div class="col-sm-8">
+                                stroke
+                                <input type="color" class="form-control input-md" ng-model="line1.stroke" />
+                            </div>
+                            <div class="col-sm-4">
+                                stroke_width
+                                <input type="number" class="form-control input-md" ng-model="line1.stroke_width" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                points
+                                <input type="text" class="form-control input-md" ng-model="line2.points" />
+                            </div>
+                            <div class="col-sm-8">
+                                stroke
+                                <input type="color" class="form-control input-md" ng-model="line2.stroke" />
+                            </div>
+                            <div class="col-sm-4">
+                                stroke_width
+                                <input type="number" class="form-control input-md" ng-model="line2.stroke_width" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- Controls .row -->
+
+            </div>  <!-- .panel-body -->
+        </div>
+
+
+
+        <hr>
+
+    </div>
+
 </div>
 
-<div class="container">
-	<h1></h1>
-	<ul class="list-unstyled">
-		<li>Lorem 1</li>
-		<li>Lorem 2</li>
-		<li>Lorem 3</li>
-	</ul>
-</div>
+
+
 
 <div class="container">
+    <hr>
+
   <h2 id="links">Links for Thought</h2>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
 
       <div class="list-group">
         <div class="list-group-item">
@@ -196,6 +772,10 @@
         <a href="#" class="list-group-item">Fake</a>
       </div>
 
+    </div>
+
+    <div class="col-md-6">
+
       <div class="list-group">
         <div class="list-group-item">
           <h4 class="list-group-item-heading">SVG in Use <small>In the Wild</small></h4>
@@ -208,19 +788,6 @@
         <a href="#" class="list-group-item">Fake</a>
       </div>
 
-      <div class="list-group">
-        <div class="list-group-item">
-          <h4 class="list-group-item-heading">Other Links....</h4>
-        </div>
-        <a href="#" class="list-group-item">Fake</a>
-        <a href="#" class="list-group-item">Fake</a>
-        <a href="#" class="list-group-item">Fake</a>
-        <a href="#" class="list-group-item">Fake</a>
-        <a href="#" class="list-group-item">Fake</a>
-        <a href="#" class="list-group-item">Fake</a>
-      </div>
-
-
     </div>
 
   </div>
@@ -231,7 +798,12 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-		<script src="rainbow-custom.min.js"></script>
+        <!-- // <script src="rainbow-custom.min.js"></script> -->
+        <script src="prism.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+
+        <script src="main.js"></script>
 
 
 	</body>

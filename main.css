@@ -1,4 +1,15 @@
 svg {
-    border: 10px dashed #c2c2c2;
     box-sizing: border-box;
+    border: 10px dashed #c2c2c2;
+    background-color: #fff;
+}
+
+.my-svg-app .panel-body {
+    background-color: #2b3e50;
+}
+
+.my-svg-app svg{
+    margin: 10px 0;
+    border: none;
+    background-color: #FFF;
 }
